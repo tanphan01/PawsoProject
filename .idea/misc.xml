@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_close.xml" value="0.2545" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_like.xml" value="0.2545" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_login_bg.xml" value="0.1" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_register_bg.xml" value="0.1" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_stars.xml" value="0.2445" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/drawable/login_btn_bg.xml" value="0.1" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/activity_message.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_birthdate.xml" value="0.6116941529235382" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_description.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_explore.xml" value="0.25" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_message.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_stars.xml" value="0.25" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_user.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/item_cat.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/item_cat_detail.xml" value="0.1" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/layout/item_profile_details.xml" value="0.25" />
+        <entry key="..\:/Users/STG1466/AndroidStudioProjects/Pawso/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/tanph/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14" />
+        <entry key="..\:/Users/tanph/AndroidStudioProjects/Pawso/app/src/main/res/drawable/ic_login_bg.xml" value="0.14" />
+        <entry key="..\:/Users/tanph/AndroidStudioProjects/Pawso/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Users/tanph/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/tanph/AndroidStudioProjects/Pawso/app/src/main/res/layout/fragment_registration.xml" value="0.2578125" />
+        <entry key="..\:/Users/tanph/Documents/GitHub/Pawso/app/src/main/res/layout/fragment_explore.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/tanph/Documents/GitHub/Pawso/app/src/main/res/layout/fragment_message.xml" value="0.2578125" />
+        <entry key="..\:/Users/tanph/Documents/GitHub/Pawso/app/src/main/res/layout/fragment_profile.xml" value="0.2578125" />
+        <entry key="..\:/Users/tanph/Documents/GitHub/Pawso/app/src/main/res/layout/fragment_stars.xml" value="0.2578125" />
+        <entry key="..\:/Users/tanph/Documents/GitHub/Pawso/app/src/main/res/layout/item_cat.xml" value="0.2578125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Pawso</string>
+
+    <string name="password" />
+    <string name="tv_password">Password</string>
+    <string name="tv_email">Email</string>
+    <string name="login" />
+    <string name="email" />
+    <string name="tv_pass">Password</string>
+    <string name="tv_emailreg">Email</string>
+    <string name="Name">Name</string>
+    <string name="name" />
+    <string name="signup">Signup</string>
+    <string name="registration" />
+    <string name="remember_me">Remember Me</string>
+
+    <string name="action_next">Next</string>
+    <string name="label_on_boarding_name" />
+    <string name="prompt_on_boarding_full_name_hint" />
+    <string name="next">Next</string>
+    <string name="your_are">Your are</string>
+    <string name="label_on_boarding_birth_date">Your birthdate is</string>
+    <string name="label_on_boarding_birth_date_advice">Your birthdate will be sent to the shelter</string>
+    <string name="label_on_boarding_birth_date_warning">You should be over 18 years old or asking to an adult to adopt</string>
+    <string name="label_on_boarding_description">Introduce yourself</string>
+    <string name="prompt_on_boarding_description_hint">Tell us why you want to adopt cats, which home you live in, who the family members are and if you have other pets</string>
+    <string name="profile_title_uppercase" />
+    <string name="message_title_uppercase" />
+    <string name="favorites_title_uppercase" />
+    <string name="explore_title_uppercase" />
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="hello_world" />
+    <string name="circular_imageview">Circular ImageView</string>
+    <string name="gender" />
+    <string name="firstname" />
+    <string name="age" />
+    <string name="mood" />
+    <string name="profile_image" />
+    <string name="my_profile_details">My profile details</string>
+    <string name="action_logout">Log Out</string>
+    <string name="my_email_address">My email address</string>
+    <string name="my_birthdate">My birthdate</string>
+    <string name="textview" />
+    <string name="todo">TODO</string>
+    <string name="description">Description</string>
+    <string name="N" />
+    <string name="m" />
+    <string name="d" />
+
+
+</resources>

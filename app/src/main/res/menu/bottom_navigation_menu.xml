@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/exploreFragment"
+        android:enabled="true"
+        android:icon="@drawable/pawso_letter"
+        android:title="@string/explore_title_uppercase"/>
+
+    <item
+        android:id="@+id/starsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_stars"
+        android:title="@string/favorites_title_uppercase"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile_title_uppercase"/>
+
+</menu>

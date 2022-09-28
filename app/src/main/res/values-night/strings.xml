@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pawso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="password" />
+    <string name="tv_password">Password</string>
+    <string name="tv_email">Email</string>
+    <string name="login" />
+    <string name="email" />
+    <string name="tv_pass">Password</string>
+    <string name="tv_emailreg">Email</string>
+    <string name="Name">Name</string>
+    <string name="name" />
+    <string name="signup">Signup</string>
+    <string name="registration" />
+    <string name="remember_me">Remember Me</string>
+</resources>
