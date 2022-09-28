@@ -1,5 +1,6 @@
 package be.bf.pawso.ui.home.fragments
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import androidx.preference.PreferenceManager
 import be.bf.pawso.R
 import be.bf.pawso.databinding.FragmentProfileBinding
 import be.bf.pawso.models.User
 import be.bf.pawso.ui.home.viewmodel.CatViewModel
 import be.bf.pawso.ui.home.viewmodel.CatViewModelFactory
+import be.bf.pawso.ui.main.MainActivity
 import java.time.Instant
 import java.time.LocalDate
 import java.time.ZoneId
@@ -53,7 +57,22 @@ class ProfileFragment : Fragment() {
 
         }
 
+
+
+        binding.logoutButton.setOnClickListener {
+
+            val pref = PreferenceManager.getDefaultSharedPreferences(requireContext())
+            with (pref.edit()) {
+                remove("email")
+                putInt("ID", -1)
+                apply()
+            }
+            val intent = Intent(requireContext(),MainActivity::class.java)
+            startActivity(intent)
+        }
+
         return binding.root
+
     }
 
     companion object {

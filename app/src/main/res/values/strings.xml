@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Pawso</string>
 
-    <string name="password" />
+    <string name="password">Password</string>
     <string name="tv_password">Password</string>
     <string name="tv_email">Email</string>
     <string name="login" />
@@ -12,7 +12,6 @@
     <string name="name" />
     <string name="signup">Signup</string>
     <string name="registration" />
-    <string name="remember_me">Remember Me</string>
 
     <string name="action_next">Next</string>
     <string name="label_on_boarding_name" />

@@ -51,13 +51,7 @@ class StarsFragment : Fragment() {
             Log.d("cat", it.toString())
 
             val intent = Intent(requireContext(), MessageActivity::class.java)
-            intent.putExtra("image", adapter.CatViewHolder(requireView()).profile_image.drawable.)
-            intent.putExtra("fName", adapter.CatViewHolder(requireView()).tv_firstname.drawable.)
-            intent.putExtra("gender", adapter.CatViewHolder(requireView()).tv_gender.drawable.)
-            intent.putExtra("age", adapter.CatViewHolder(requireView()).tv_age.drawable.)
-            intent.putExtra("shelter", adapter.CatViewHolder(requireView()).tv_shelter.drawable.)
-            intent.putExtra("mood", adapter.CatViewHolder(requireView()).tv_mood.drawable.)
-            intent.putExtra("profileCard", adapter.CatViewHolder(requireView()).profileCard.drawable.)
+            intent.putExtra("cat", it)
             startActivity(intent)
         }
 

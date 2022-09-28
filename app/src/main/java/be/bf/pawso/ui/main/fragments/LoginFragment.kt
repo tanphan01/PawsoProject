@@ -1,6 +1,5 @@
 package be.bf.pawso.ui.main.fragments
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,7 +27,7 @@ import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
  * create an instance of this fragment.
  */
 class LoginFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
@@ -36,16 +35,13 @@ class LoginFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
@@ -58,21 +54,20 @@ class LoginFragment : Fragment() {
 
         viewModel.selectedUser.observe(viewLifecycleOwner) {
             if (it != null) {
-                if (binding.checkBox.isChecked) {
                     val email = binding.eTextEmail.text.toString()
                     val pref = PreferenceManager.getDefaultSharedPreferences(requireContext())
                     with (pref.edit()) {
                         putString("email", email)
                         putInt("ID", it.id!!)
-                        apply()
+                        commit()
                     }
-                }
+
                 val intent = Intent (requireContext(), HomeActivity::class.java)
                 intent.putExtra("user", it)
                 startActivity(intent)
             }
             else {
-                Toast.makeText(requireContext(), "Wrong Match", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Email or Password doesn't match", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -83,18 +78,16 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnRegLogin.setOnClickListener { view: View ->
+
             findNavController().navigate(R.id.action_loginFragment_to_registrationFragment)
-
-        }
-
-        binding.checkBox.setOnClickListener {
         }
 
         binding.btnLog.setOnClickListener { view: View ->
-            viewModel.logUser(binding.eTextEmail.text.toString(),
-                binding.eTextPassword.text.toString())
+
+                viewModel.logUser(binding.eTextEmail.text.toString(),
+                    binding.eTextPassword.text.toString())
+            }
         }
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
@@ -110,13 +103,12 @@ class LoginFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment LoginFragment.
          */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             LoginFragment().apply {
                 arguments = Bundle().apply {
-//                    putString(ARG_PARAM1, param1)
-//                    putString(ARG_PARAM2, param2)
+
                 }
             }
     }

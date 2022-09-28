@@ -1,10 +1,13 @@
 package be.bf.pawso.ui.main.fragments
 
 import android.content.Intent
+import android.opengl.ETC1.isValid
 import android.os.Bundle
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -45,8 +48,14 @@ class RegistrationFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentRegistrationBinding.inflate(inflater, container, false)
+
+        emailFocusListener()
+        passwordFocusListener()
+
         return binding.root
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -56,11 +65,76 @@ class RegistrationFragment : Fragment() {
         }
 
         binding.btnReg.setOnClickListener { view: View ->
-            viewModel.userName = binding.eTextName.text.toString()
-            viewModel.email = binding.eTextEmail.text.toString()
-            viewModel.password = binding.eTextPassword.text.toString()
-            findNavController().navigate(R.id.action_registrationFragment_to_birthdateFragment)
+
+            val mailValidity = validEmail()
+            val passwordValidity = validPassword()
+
+            if (mailValidity == null && passwordValidity == null) {
+                viewModel.userName = binding.eTextName.text.toString()
+                viewModel.email = binding.eTextEmail.text.toString()
+                viewModel.password = binding.eTextPassword.text.toString()
+                findNavController().navigate(R.id.action_registrationFragment_to_birthdateFragment)
+            } else {
+                val mailMessage = mailValidity ?: ""
+                val passwordMessage = passwordValidity ?: ""
+
+                val message = mailMessage + "\n" + passwordMessage
+
+                Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show()
+
+                binding.eTextPassword.text = null
+            }
         }
+
+    }
+    private fun emailFocusListener() {
+        binding.eTextEmail.setOnFocusChangeListener { _, focused ->
+            if(!focused)
+            {
+                binding.layoutEmail.helperText = validEmail()
+            }
+        }
+    }
+
+    private fun validEmail(): String?
+    {
+        val emailText = binding.eTextEmail.text.toString()
+        if(!Patterns.EMAIL_ADDRESS.matcher(emailText).matches())
+        {
+            return "Invalid Email Address"
+        }
+        return null
+    }
+
+    private fun passwordFocusListener() {
+        binding.eTextPassword.setOnFocusChangeListener { _, focused ->
+            if(!focused)
+            {
+                binding.layoutPassword.helperText = validPassword()
+            }
+        }
+    }
+
+    private fun validPassword(): String?
+    {
+        val passwordText = binding.eTextPassword.text.toString()
+        if(passwordText.length < 8)
+        {
+            return "Minimum 8 Characters Password"
+        }
+        if (!passwordText.matches(".*[A-Z].*.".toRegex()))
+        {
+            return "Must Contain 1 Upper-case Character"
+        }
+        if (!passwordText.matches(".*[a-z].*.".toRegex()))
+        {
+            return "Must Contain 1 Lower-case Character"
+        }
+        if (!passwordText.matches(".*[@#\$%^&+=].*".toRegex()))
+        {
+            return "Must Contain 1 Special-case Character (@#\$%^&+=)"
+        }
+            return null
     }
 
     override fun onDestroyView() {
