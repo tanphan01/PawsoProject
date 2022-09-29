@@ -2,23 +2,17 @@ package be.bf.pawso.ui.main.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import be.bf.pawso.ui.home.HomeActivity
 import be.bf.pawso.R
 import be.bf.pawso.databinding.FragmentDescriptionBinding
+import be.bf.pawso.ui.home.HomeActivity
 import be.bf.pawso.ui.main.viewmodel.UserViewModel
 import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//private const val ARG_PARAM1 = "param1"
-//private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -26,7 +20,7 @@ import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
  * create an instance of this fragment.
  */
 class DescriptionFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var _binding: FragmentDescriptionBinding? = null
     private val binding get() = _binding!!
 
@@ -83,7 +77,7 @@ class DescriptionFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment DescriptionFragment.
          */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             DescriptionFragment().apply {

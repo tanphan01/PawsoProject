@@ -15,6 +15,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 class CatAdapter(private val mContext: Context, private val cats : ArrayList<Cat>) : ArrayAdapter<Cat>(mContext, 0, cats) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+
         var catItem = convertView
 
         if (catItem == null)

@@ -1,8 +1,10 @@
 package be.bf.pawso.dal.daos
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import be.bf.pawso.models.Cat
-import be.bf.pawso.models.CatWithShelter
 import be.bf.pawso.models.Shelter
 import kotlinx.coroutines.flow.Flow
 

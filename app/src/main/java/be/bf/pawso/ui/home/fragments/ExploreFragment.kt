@@ -15,11 +15,6 @@ import be.bf.pawso.ui.home.viewmodel.CatViewModel
 import be.bf.pawso.ui.home.viewmodel.CatViewModelFactory
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//private const val ARG_PARAM1 = "param1"
-//private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  * Use the [ExploreFragment.newInstance] factory method to
@@ -94,8 +89,6 @@ class ExploreFragment : Fragment() {
             cats.addAll(it)
             adapter.notifyDataSetChanged()
         }
-
-
 
     }
 

@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Pawso</string>
 
-    <string name="password">Password</string>
     <string name="tv_password">Password</string>
     <string name="tv_email">Email</string>
     <string name="login" />
@@ -48,6 +47,13 @@
     <string name="N" />
     <string name="m" />
     <string name="d" />
+    <string name="contact_the_shelter">Adopt me</string>
+    <string name="todoo">TODO</string>
+    <string name="european">European</string>
+    <string name="vaccinated_typhus_coryza">Vaccinated Typhus/Coryza</string>
+    <string name="dewormed">Dewormed</string>
+    <string name="electronic_chip">Electronic chip</string>
+    <string name="sterilized">Sterilized</string>
 
 
 </resources>

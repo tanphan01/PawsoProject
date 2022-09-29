@@ -16,11 +16,6 @@ import be.bf.pawso.ui.home.HomeActivity
 import be.bf.pawso.ui.main.viewmodel.UserViewModel
 import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//private const val ARG_PARAM1 = "param1"
-//private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  * Use the [LoginFragment.newInstance] factory method to
@@ -77,14 +72,14 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnRegLogin.setOnClickListener { view: View ->
+        binding.btnRegLogin.setOnClickListener {
 
             findNavController().navigate(R.id.action_loginFragment_to_registrationFragment)
         }
 
-        binding.btnLog.setOnClickListener { view: View ->
+        binding.btnLog.setOnClickListener {
 
-                viewModel.logUser(binding.eTextEmail.text.toString(),
+            viewModel.logUser(binding.eTextEmail.text.toString(),
                     binding.eTextPassword.text.toString())
             }
         }

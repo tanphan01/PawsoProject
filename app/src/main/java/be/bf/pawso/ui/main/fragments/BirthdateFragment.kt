@@ -2,13 +2,11 @@ package be.bf.pawso.ui.main.fragments
 
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.DatePicker
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import be.bf.pawso.R
@@ -16,11 +14,9 @@ import be.bf.pawso.databinding.FragmentBirthdateBinding
 import be.bf.pawso.ui.main.viewmodel.UserViewModel
 import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
 import java.time.LocalDate
-import java.time.LocalDateTime
 import java.time.ZoneId
-import java.util.*
 
-// TODO: Rename parameter arguments, choose names that match
+
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 //private const val ARG_PARAM1 = "param1"
 //private const val ARG_PARAM2 = "param2"
@@ -31,7 +27,7 @@ import java.util.*
  * create an instance of this fragment.
  */
 class BirthdateFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var _binding: FragmentBirthdateBinding? = null
     private val binding get() = _binding!!
 
@@ -64,12 +60,12 @@ class BirthdateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.nextButton.setOnClickListener { view: View ->
+        binding.nextButton.setOnClickListener {
             viewModel.birthdate = date
             findNavController().navigate(R.id.action_birthdateFragment_to_descriptionFragment)
         }
 
-        binding.backButton.setOnClickListener { view: View ->
+        binding.backButton.setOnClickListener {
             findNavController().navigate(R.id.action_birthdateFragment_to_registrationFragment)
         }
     }
@@ -88,7 +84,7 @@ class BirthdateFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment BirthdateFragment.
          */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             BirthdateFragment().apply {

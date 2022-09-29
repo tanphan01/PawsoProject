@@ -1,7 +1,5 @@
 package be.bf.pawso.ui.main.fragments
 
-import android.content.Intent
-import android.opengl.ETC1.isValid
 import android.os.Bundle
 import android.util.Patterns
 import android.view.LayoutInflater
@@ -13,14 +11,8 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import be.bf.pawso.R
 import be.bf.pawso.databinding.FragmentRegistrationBinding
-import be.bf.pawso.ui.home.HomeActivity
 import be.bf.pawso.ui.main.viewmodel.UserViewModel
 import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-//private const val ARG_PARAM1 = "param1"
-//private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -28,7 +20,7 @@ import be.bf.pawso.ui.main.viewmodel.UserViewModelFactory
  * create an instance of this fragment.
  */
 class RegistrationFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var _binding: FragmentRegistrationBinding? = null
     private val binding get() = _binding!!
 
@@ -60,11 +52,11 @@ class RegistrationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnLogRegister.setOnClickListener { view: View ->
+        binding.btnLogRegister.setOnClickListener {
             findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
         }
 
-        binding.btnReg.setOnClickListener { view: View ->
+        binding.btnReg.setOnClickListener {
 
             val mailValidity = validEmail()
             val passwordValidity = validPassword()
@@ -151,7 +143,7 @@ class RegistrationFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment RegistrationFragment.
          */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             RegistrationFragment().apply {
