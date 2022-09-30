@@ -25,7 +25,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="100dp"
         android:text="@string/my_profile_details"
-        android:textSize="20sp"
+        android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
-        android:text="@string/Name"
-        android:textSize="15sp"
+        android:text="@string/tv_namereg"
+        android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -47,9 +48,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:text="@string/N"
         android:textSize="13sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -60,7 +62,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="68dp"
         android:text="@string/my_email_address"
-        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -69,9 +72,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="94dp"
         android:text="@string/m"
         android:textSize="13sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -82,7 +86,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="68dp"
         android:text="@string/my_birthdate"
-        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
@@ -91,9 +96,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="94dp"
         android:text="@string/m"
         android:textSize="13sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
@@ -104,7 +110,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="68dp"
         android:text="@string/description"
-        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datePicker" />
 
@@ -113,9 +120,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="94dp"
         android:text="@string/d"
         android:textSize="13sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/datePicker" />
 

@@ -99,19 +99,23 @@
                             android:id="@+id/tv_gender_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/tv_race_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/european" />
+                            android:text="@string/european"
+                            android:textStyle="italic" />
 
                         <TextView
                             android:id="@+id/tv_mood_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text=""
+                            android:textStyle="italic" />
 
                     </LinearLayout>
 
@@ -125,32 +129,37 @@
                             android:id="@+id/tv_vaccin_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/vaccinated_typhus_coryza" />
+                            android:text="@string/vaccinated_typhus_coryza"
+                            android:textStyle="italic" />
 
                         <TextView
                             android:id="@+id/tv_parasite_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/dewormed" />
+                            android:text="@string/dewormed"
+                            android:textStyle="italic" />
 
                         <TextView
                             android:id="@+id/tv_chip_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
-                            android:text="@string/electronic_chip" />
+                            android:text="@string/electronic_chip"
+                            android:textStyle="italic" />
 
                         <TextView
                             android:id="@+id/tv_sterilized_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/sterilized" />
+                            android:text="@string/sterilized"
+                            android:textStyle="italic" />
 
                         <TextView
                             android:id="@+id/tv_shelter_cat_message_activity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="" />
+                            android:text=""
+                            android:textStyle="italic" />
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>

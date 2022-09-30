@@ -2,16 +2,15 @@
 <resources>
     <string name="app_name">Pawso</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="password" />
+    <string name="password" translatable="false" />
     <string name="tv_password">Password</string>
-    <string name="tv_email">Email</string>
-    <string name="login" />
-    <string name="email" />
+    <string name="tv_email" translatable="false">Email</string>
+    <string name="login" translatable="false" />
+    <string name="email" translatable="false" />
     <string name="tv_pass">Password</string>
-    <string name="tv_emailreg">Email</string>
+    <string name="tv_emailreg" translatable="false">Email</string>
     <string name="Name">Name</string>
-    <string name="name" />
+    <string name="name" translatable="false" />
     <string name="signup">Signup</string>
-    <string name="registration" />
-    <string name="remember_me">Remember Me</string>
+    <string name="registration" translatable="false" />
 </resources>

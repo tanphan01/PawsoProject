@@ -10,7 +10,7 @@ import be.bf.pawso.dal.daos.ShelterDAO
 import be.bf.pawso.dal.daos.UserDAO
 import be.bf.pawso.models.*
 
-@Database(entities = [Cat::class, User::class, Shelter::class, Message::class], version = 9, exportSchema = false)
+@Database(entities = [Cat::class, User::class, Shelter::class, Message::class], version = 1, exportSchema = false)
 abstract class DbHelper: RoomDatabase() {
 
     //--- DAO ---

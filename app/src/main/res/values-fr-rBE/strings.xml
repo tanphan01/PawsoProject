@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pawso</string>
+    <string name="tv_password">Mot de passe</string>
+    <string name="tv_pass">Mot de passe</string>
+    <string name="Name">Nom</string>
+    <string name="signup">Inscription</string>
+    <string name="next">Suivant</string>
+    <string name="your_are">Tu es</string>
+    <string name="label_on_boarding_birth_date">Ta date de naissance est</string>
+    <string name="label_on_boarding_birth_date_advice">Ta date de naissance va être envoyer au refuge</string>
+    <string name="label_on_boarding_birth_date_warning">"Tu dois avoir plus de 18 ans ou demander à un adulte pour pouvoir adopter "</string>
+    <string name="label_on_boarding_description">Présente-toi</string>
+    <string name="prompt_on_boarding_description_hint">Dis-nous pourquoi tu souhaites adopter des chats, où vis-tu, combien y a t-il de membres dans la famille et si tu as d\'autres animaux</string>
+    <string name="like">Aime</string>
+    <string name="dislike">N\'aime pas</string>
+    <string name="my_profile_details">Mes coordonnées</string>
+    <string name="action_logout">Déconnexion</string>
+    <string name="my_email_address">Mon adresse email</string>
+    <string name="my_birthdate">Ma date de naissance</string>
+    <string name="contact_the_shelter">Adopte-moi</string>
+    <string name="european">Européen</string>
+    <string name="dewormed">Déparasité</string>
+    <string name="vaccinated_typhus_coryza">Vacciné Typhus/Coryza</string>
+    <string name="electronic_chip">Puce électronique</string>
+    <string name="sterilized">Stérélisé</string>
+    <string name="tv_namereg">Nom</string>
+    <string name="login_main">Se connecter</string>
+    <string name="register_2main">S\'enregistrer</string>
+    <string name="btnlogin">Se connecter</string>
+    <string name="register_main">S\'enregistrer</string>
+</resources>
